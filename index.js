@@ -60,7 +60,7 @@ const verifyToken = (req) => {
 
 // Endpoint: /login
 // This endpoint verifies the username and password from the request body and generates a JWT token
-// The token payload includes the user's name, permissions (allowed routes), and role
+// The token payload includes the user's name, permissions (allowed routes), and role.
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   const user = findUser(username);
